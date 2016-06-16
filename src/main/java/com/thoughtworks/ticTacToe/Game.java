@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintStream;
 
+import static java.lang.Integer.parseInt;
+
 public class Game {
 
     private final PrintStream printStream;
@@ -22,8 +24,9 @@ public class Game {
     }
 
     private void askForFirstPlayersMove() {
-        printStream.println("First player, pick your move: ");
-        String move = readLine();
+        printStream.println("\nFirst player, pick your move: ");
+        int move = parseInt(readLine());
+        board.addMove(move);
         board.draw();
     }
     private String readLine() {
