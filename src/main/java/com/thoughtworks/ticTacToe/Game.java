@@ -19,18 +19,22 @@ public class Game {
     }
 
     public void start() {
-
         board.draw();
-        askForFirstPlayersMove();
+        move(true);
+        move(false);
     }
 
-    private void askForFirstPlayersMove() {
-
-        printStream.println("\nFirst player, pick your move: ");
-        int move = parseInt(readLine());
-        board.addMove(move);
+    private void move(boolean isFirstPlayer) {
+        if (isFirstPlayer) {
+            printStream.println("\nFirst player, pick your move: ");
+        } else {
+            printStream.println("\nSecond player, pick your move: ");
+        }
+        int moveSelection = parseInt(readLine());
+        board.addMove(moveSelection);
         board.draw();
     }
+
     private String readLine() {
         try {
             return bufferedReader.readLine();
