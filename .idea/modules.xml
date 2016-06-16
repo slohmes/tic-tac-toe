@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/main.iml" filepath="$PROJECT_DIR$/.idea/modules/main/main.iml" group="main" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/main_main.iml" filepath="$PROJECT_DIR$/.idea/modules/main/main_main.iml" group="main" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/main_test.iml" filepath="$PROJECT_DIR$/.idea/modules/main/main_test.iml" group="main" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/tic-tac-toe.iml" filepath="$PROJECT_DIR$/.idea/modules/tic-tac-toe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tic-tac-toe_main.iml" filepath="$PROJECT_DIR$/.idea/modules/tic-tac-toe_main.iml" group="tic-tac-toe" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tic-tac-toe_test.iml" filepath="$PROJECT_DIR$/.idea/modules/tic-tac-toe_test.iml" group="tic-tac-toe" />
     </modules>
   </component>
 </project>
