@@ -19,11 +19,13 @@ public class Game {
     }
 
     public void start() {
+
         board.draw();
         askForFirstPlayersMove();
     }
 
     private void askForFirstPlayersMove() {
+
         printStream.println("\nFirst player, pick your move: ");
         int move = parseInt(readLine());
         board.addMove(move);
