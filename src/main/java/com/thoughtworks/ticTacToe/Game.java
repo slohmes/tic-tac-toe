@@ -31,7 +31,12 @@ public class Game {
             printStream.println("\nSecond player, pick your move: ");
         }
         int moveSelection = parseInt(readLine());
-        board.addMove(moveSelection);
+
+        if (isFirstPlayer) {
+            board.addMove(moveSelection, "X");
+        } else {
+            board.addMove(moveSelection, "O");
+        }
         board.draw();
     }
 

@@ -16,11 +16,11 @@ public class Board {
     }
 
 
-    public void addMove(int move) {
-        int rowIndexOfMove = (int) Math.ceil((move - 1)/ 3);
+    public void addMove(int move, String symbol) {
+        int rowIndexOfMove = (int) Math.ceil((move - 1) / 3);
         int columnIndexOfMove = (move - 1) % 3;
 
-        layout[rowIndexOfMove][columnIndexOfMove] = "X";
+        layout[rowIndexOfMove][columnIndexOfMove] = symbol;
 
     }
 
